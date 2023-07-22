@@ -1,0 +1,292 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(216, 116, 116);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navigation bar : logo and Image */
+#logo{
+    margin: -26px 20px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 32px 10px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/* navigation bar : list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:xx-large;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li button a{
+    color: black;
+    font-size:x-large;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 174, 255);
+}
+
+#loginbutton{
+    margin-left: 625px;
+    border-radius: 30px;
+}
+
+#loginbutton a:hover{
+    color: white;
+    background-color: rgb(113, 110, 116);    
+}
+
+/* home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 820px;
+}
+#home::before{
+    content: "";
+    background:url("bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* services section */
+#services{    
+    margin: 50px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+#services .box img{
+    height: 230px;
+    margin:auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#services .box p{
+    font-size: x-large;
+    padding: 10px;
+}
+
+#services .box button{
+    padding: 10px;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#services .box button:hover{
+    color: rgb(255, 0, 0);
+    background-color: aqua;
+}
+
+#services .box button a{
+    font-size: x-large;
+    align-items: center;
+}
+
+/* utility classes */
+#home h1{
+    color: rgb(255, 233, 110);
+    text-align: center;
+    padding: 30px;
+}
+#home p{
+    color: rgb(212, 252, 240);
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+.h-primary{
+    font-size:6rem;
+    padding: 10px;
+}
+
+.h-secondary{
+    font-size:3rem;
+    padding: 10px;
+}
+
+
+.btn{
+    padding:20px 40px;
+    border: 2px solid white;
+    background-color: antiquewhite;
+    font-size: x-large;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    color: aqua;
+    background-color: rgb(152, 13, 170);
+}
+
+.center{
+    text-align: center;
+}
+
+/* information section */
+#info1{
+    display:flex;
+    flex-direction: row;
+}
+
+#info h1{
+    color: rgb(255, 0, 255);
+}
+#info p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: x-large;
+}
+#info::before{
+    content: "";
+    background:url("bg5.png") no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#info1{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+#info1 .infobox{
+    border: 2px solid brown;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#info .infobox p{
+    font-size: x-large;
+    padding: 10px;
+    color: black;
+}
+
+#info1 .infobox img{
+    height: 150px;
+    margin:auto;
+    display: block;
+}
+
+/* customer reviews */
+#cstreview h1{
+    color: white;
+}
+
+#view{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 400px;
+
+}
+#view::before{
+    content: "";
+    background:url("bg12.png") no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#view .viewbox{
+    border: 2px solid brown;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#view .viewbox img{
+    height: 100px;
+    margin:auto;
+    display: block;
+}
+
+#view .viewbox p{
+    font-size: x-large;
+    padding: 10px;
+}
+
+/* last information */
+#lastdiv{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+#lastdiv p{
+    font-size: x-large;
+    color: black;
+    text-align: center;
+
+}

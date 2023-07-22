@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Booking Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../cbook.css">
+</head>
+<body>
+<div class="container1">
+  <center><h2>Car Service Booking Form</h2></center>
+  <form action="submit_phpcrm_form.php" method="post">
+    <div class="row">
+      <div class="col-50"> 
+      <input type="text" id="name" name="name" placeholder="Full Name" required/>
+    </div>
+    <div class="col-50"> 
+      <input type="email" id="email" name="email" placeholder="Email Address" required/>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-50">
+    <input type="number" id="phone" name="phone" placeholder="Phone Number" required />
+  </div>
+  </div>
+  <div class="row">
+    &nbsp; &nbsp;&nbsp;<label for="booking">Booking Details</label></div>
+   <div class="row">
+    <div class="col-50">
+      
+      <input type="number" id="no_of_passenger" name="no_of_passenger" placeholder="No Of Passenger" />
+    </div>
+    <div class="col-50">
+      <input type="datetime-local" id="pick_up_date" name="pick_up_date" />
+    </div>
+   </div>
+    <div class="row"> 
+      <div class="col-50">
+      <textarea name="pstreet" id="pstreet" placeholder="Pick Up Street Address" rows="4" required></textarea>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-50">
+      <input type="number" id="pzip_code" name="pzip_code" placeholder="Pick Up Zip Code" />
+    </div>
+    <div class="col-50">
+      <input type="text" id="pcity" name="pcity" placeholder="Pick Up City" />
+    </div>
+   </div>
+    <div class="row">
+      <div class="col-50">
+        <label>Destination Address</label>
+        <textarea name="dstreet" id="dstreet" placeholder="Destination Street" rows="4" required></textarea>
+      </div>
+    </div>
+    <div class="row"><div class="col-50">
+      <input type="text" id="dcity" name="dcity" placeholder="Destination City" >
+    </div>
+    <div class="col-50">
+      <input type="number" id="dzip_code" name="dzip_code" placeholder="Destination Zip Code" />
+    </div>
+  </div>
+  <div class="row"> <div class="col-50">
+    <select name="vehicle_type" id="vehicle_type">
+    <option value="null">Vehicle Type</option>
+    <option value="suv_6_7">SUV (6-7 Person)</option>
+    <option value="Limousine_8_12">Limousine (8-12 Person)</option>
+    <option value="Van_12_15">Van (12-15 person)</option>
+    <option value="Bus_50">Bus (50+ person)</option>
+    <option value="other">Other</option>
+    </select>
+    </div>
+     <div class="col-50"><input type="radio" name="side" value="one_side"/> One Side  &nbsp;&nbsp;&nbsp;
+      <input type="radio" name="side"/ value="both_side"> Both Side
+    </div>
+  </div>
+    <center><input type="submit" value="Submit" class="btn"></center>
+  </form>
+</div>
+</body>
+</html>

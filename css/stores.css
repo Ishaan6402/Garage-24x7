@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(216, 116, 116);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navigation bar : logo and Image */
+#logo{
+    margin: -26px 20px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 32px 10px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/* navigation bar : list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:xx-large;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 174, 255);
+}
+
+/* home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    background:url("bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* utility classes */
+#home h1{
+    color: rgb(255, 233, 110);
+    text-align: center;
+    padding: 30px;
+}
+#home p{
+    color: rgb(212, 252, 240);
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+.h-primary{
+    font-size:6rem;
+    padding: 10px;
+}
+.heading1{
+    font-size:6rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.h-secondary{
+    font-size:3rem;
+    padding: 10px;
+}
+
+
+.btn{
+    padding:20px 40px;
+    border: 2px solid white;
+    background-color: antiquewhite;
+    font-size: x-large;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    color: aqua;
+    background-color: rgb(152, 13, 170);
+}
+
+.center{
+    text-align: center;
+}
+
+/* store info */
+#store1{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 10px;
+   
+
+}
+#store1 .storebox{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+#store1 .storebox img{
+    height: 230px;
+    margin:auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#store1 .storebox p{
+    font-size: x-large;
+    padding: 10px;
+}
+
+#store2{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 50px;
+}
+#store2 .store2box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+#store2 .store2box img{
+    height: 230px;
+    margin:auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#store2 .store2box p{
+    font-size: x-large;
+    padding: 10px;
+}
+
+#store3{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 50px;
+    
+}
+#store3 .store3box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+#store3 .store3box img{
+    height: 230px;
+    margin:auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#store3 .store3box p{
+    font-size: x-large;
+    padding: 10px;
+}
+
+#store4{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 50px;
+    
+}
+#store4 .store4box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+#store4 .store4box img{
+    height: 230px;
+    margin:auto;
+    display: block;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#store4 .store4box p{
+    font-size: x-large;
+    padding: 10px;
+}
